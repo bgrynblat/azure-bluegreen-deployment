@@ -1,0 +1,11 @@
+{
+  "name": "azure-bluegreen",
+  "version": "0.0.0",
+  "author": "Benjamin Grynblat",
+  "contributors": [],
+  "license": "MIT",
+  "dependencies": {
+    "express": "latest"
+  },
+  "main": "server.js"
+}

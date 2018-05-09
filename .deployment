@@ -1,0 +1,3 @@
+[config]
+WEBSITE_TIME_ZONE=AUS Eastern Standard Time
+command = bash deploy_server_side.sh
