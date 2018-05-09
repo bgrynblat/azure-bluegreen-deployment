@@ -159,9 +159,9 @@ fi
 export PORT=3000
 env
 echo "======================================="
-pm2 logs
+# pm2 logs
 echo "======================================="
-pm2 status
+# pm2 status
 echo "======================================="
 ps -aef | grep node
 
