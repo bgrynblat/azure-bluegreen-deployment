@@ -156,17 +156,17 @@ fi
 # yarn db:migrate
 # exitWithMessageOnError "database migrations failed"
 # cd - > /dev/null
+export PORT=3000
+env
+echo "======================================="
+pm2 logs
+echo "======================================="
+pm2 status
+echo "======================================="
+ps -aef | grep node
 
-pm2 logs >> deploy.log
-echo "=======================================" >> deploy.log
-pm2 status >> deploy.log
-echo "=======================================" >> deploy.log
-echo "=======================================" >> deploy.log
-echo "=======================================" >> deploy.log
-ps -aef | grep node >> deploy.log
-
-echo "Uploading deploy log..."
-curl --upload-file deploy.log https://transfer.sh/deploy.log
+# echo "Uploading deploy log..."
+# curl --upload-file deploy.log https://transfer.sh/deploy.log
 
 ##################################################################################################################################
 echo "Finished successfully."
